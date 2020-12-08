@@ -20,8 +20,8 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      // home: MyHomePage(),
-      home: FirstRoute(),
+      home: MyHomePage(),
+      // home: FirstRoute(),
     );
   }
 }
@@ -41,6 +41,7 @@ class MyHomePage extends StatelessWidget {
               name: _categoryName,
               color: _categoryColor,
               iconLocation: _categoryIcon,
+              units: null,
             ),
           ),
         ),

@@ -22,6 +22,8 @@ class Category extends StatelessWidget {
   final ColorSwatch color;
   final IconData iconLocation;
 
+  final dynamic units;
+
   /// Creates a [Category].
   ///
   /// A [Category] saves the name of the Category (e.g. 'Length'), its color for
@@ -34,9 +36,11 @@ class Category extends StatelessWidget {
     @required this.name,
     @required this.color,
     @required this.iconLocation,
+    @required this.units,
   })  : assert(name != null),
         assert(color != null),
         assert(iconLocation != null),
+        assert(units != 0),
         super(key: key);
 
   /// Builds a custom widget that shows [Category] information.
